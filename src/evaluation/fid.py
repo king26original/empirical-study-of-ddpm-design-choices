@@ -2,9 +2,7 @@ from accelerate import Accelerator
 from torchmetrics.image.fid import FrechetInceptionDistance
 from src.data.dataloader import trainloader
 import copy
-from src.evaluation.multi_image_sampler import sample_batch
-
-accelerator=Accelerator(mixed_precision="fp16")
+from src.evaluation.multi_image_sampler import sample_batch, accelerator
 
 fid=FrechetInceptionDistance(
     feature=2048,

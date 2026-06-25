@@ -1,5 +1,7 @@
 import torch
-from src.evaluation.fid import accelerator
+from accelerate import Accelerator
+
+accelerator=Accelerator(mixed_precision="fp16")
 
 def sample_batch(
     ema_model,
