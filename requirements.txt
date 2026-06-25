@@ -1,8 +1,12 @@
 numpy
-torch
-torchvision
+torch --index-url https://download.pytorch.org/whl/cpu
+torchvision --index-url https://download.pytorch.org/whl/cpu
 accelerate
 matplotlib
 torchmetrics
 torch-fidelity
 torchmetrics[image]
+fastapi
+uvicorn[standard]
+huggingface-hub
+Pillow

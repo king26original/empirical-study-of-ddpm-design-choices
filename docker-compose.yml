@@ -1,0 +1,10 @@
+services:
+  ddpm-api:
+    build: .
+    container_name: ddpm_inference_service
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount your local HuggingFace cache so models
+      # are not re-downloaded every time
+      - ${USERPROFILE}/.cache/huggingface:/root/.cache/huggingface

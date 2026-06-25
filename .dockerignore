@@ -1,0 +1,13 @@
+__pycache__
+*.pyc
+.git
+.gitignore
+*.md
+.venv
+venv
+env
+.env
+wandb
+outputs
+*.ipynb
+.ipynb_checkpoints
